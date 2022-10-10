@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen and (max-width: 768px)"  href="./assets/styles/mobile.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+  <title>Decodificador de Texto</title>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <span class="cabecalho_span">
+        <img src="./assets/imgs/logo.svg" alt="">
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="principal">
+      <div class="principal_texto">
+        <form class="principal_form" action="">
+          <textarea rows="15" type="text" autofocus required autocomplete="off" spellcheck="false" id="texto"
+            placeholder="Digite aqui"></textarea>
+
+          <div class="principal_botoes">
+
+            <button title="codificador" class="principal__botao" id="botao_codific" type="submit" name="button">
+              <h3 class="principal__botao-texto1">Criptografar</h3>
+            </button>
+
+            <button title="decodificador" class="principal__botao" id="botao_decodific" type="submit" name="button">
+              <h3 class="principal__botao-texto2">Descriptografar</h3>
+            </button>
+
+          </div>
+        </form>
+      </div>
+
+
+      <div class="principal_tela">
+        <div class="principal_tela-img">
+          <img src="./assets/imgs/searching.svg" alt="">
+          <div class="principal_tela-texto">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+
+        </div>
+
+        <div class="principal_texto-final">
+          <form class="principal_form-final" action="">
+            <textarea rows="15" class="mensagem" title="texto-final" readonly type="text" required="text"
+              id="texto-final"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="principal_aviso">
+        <img src="./assets/imgs/exclamação-3.png" alt="">
+        <p>
+          Apenas letras minúsculas e sem acento.
+        </p>
+      </div>
+
+      <div class="principal_texto-copiar mensagem">
+        <div>
+          <button title="copiar" class="principal_botao" id="botao_copia" type="button">
+            <h3>Copiar</h3>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <footer>
+        <p>&copy; Desenvolvido por <a rel="noopener" target="_blank" href="https://github.com/guilhermehub12">Guilherme
+            Delmiro</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
